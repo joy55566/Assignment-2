@@ -12,6 +12,9 @@
     font-weight: bold;
     padding: 1rem;
 }
+.primary-color{
+    color: #E95A08;
+}
 .display-flex{
     display: flex;
 }
@@ -40,6 +43,32 @@ header{
 .shop,.about{
     color: #8987A1;
 }
+/* Banner styles */
+.banner{
+    margin-top: 120px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 3vw;
+}
+.banner-content{
+    flex: 1;
+    padding-top: 162px;
+}
+.banner-content h1{
+    font-size: 4rem;
+    white-space: pre-line;
+}
+.banner-content p{
+    font-size: 1.2rem;
+    white-space: pre-line;
+    color: var(--dark-50);
+}
+.banner-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 90px;
+}
 
 /* Responsive for mobile */
 @media screen and (max-width: 576px) {
@@ -62,6 +91,34 @@ header{
     width: 63px;
     height: 38px;
 }
-
+.banner{
+    flex-direction: column-reverse;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    gap: 15px;
+}
+.banner-content{
+    flex: 1;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.banner-content h1{
+    font-size: 2.5rem;
+    white-space: pre-line;
+}
+.banner-content p{
+    margin-top: 15px;
+    font-size: 0.8rem;
+    white-space: pre-line;
+    color: var(--dark-50);
+}
+.banner-img {
+    justify-content: none;
+    width: 100%;
+    padding-top: 90px;
+}
     
 }
