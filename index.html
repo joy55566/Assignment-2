@@ -99,7 +99,7 @@
            <section class="fp-section display-flex">
             <div class="store-image">
                 <img src="assets/flower-store.png" alt="">
-                <img class="badge" src="assets/trusted-badge.png" alt="">
+                <img class="badge" src="assets/trusted-badge.png" alt="Trusted Seller">
             </div>
             <div class="fp-content">
                 <h3 class="bold noto-serif">Flower & Plants 
@@ -179,5 +179,14 @@
         </div>
         </div>
     </footer>
+    <script>
+        const buttons = document.querySelectorAll('.p-btn');
+
+        buttons.forEach(function(button){
+            button.addEventListener('click', function(){
+                alert('🛒Product added to cart!');
+            });
+        });
+    </script>
 </body>
 </html>

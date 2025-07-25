@@ -126,6 +126,16 @@ header{
     top: -122px;
     right: -73px;
     z-index: 2;
+    animation: badge 3s linear infinite;
+}
+@keyframes badge {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
 }
 .fp-content {
     flex: 1;
