@@ -140,6 +140,135 @@ header{
     margin-bottom: 5vh;
 }
 
+/* Latest Deals styles */
+.latest-deal{
+    text-align: center;
+    margin: 20vh 10vw 5vh;
+}
+.latest-deal h3{
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+.latest-deal p{
+    font-size: 1.2rem;
+    color: var(--dark-50);
+    white-space: pre-line;
+    margin-bottom: 15vh;
+}
+.pic-container{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 210px 210px;
+    gap: 30px;
+    max-height: 450px;
+    color: white;
+}
+.bloom-plants{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.443)), url("assets/deal-bloom.png");
+    grid-column: span 1;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+}
+.bloom-plants h6{
+    font-size: 20px;
+    font-weight: bold;
+}
+.bloom-plants a{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.zabo-plants{
+    grid-column: span 2;
+    grid-row: span 2;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.434)), url("assets/deal-zabo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+}
+.zabo-plants h6{
+    font-size: 40px;
+    font-weight: bold;
+}
+.zabo-plants a{
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.ana-plants{
+    grid-column: span 1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.436)), url("assets/deal-ana.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+}
+.ana-plants h6{
+    font-size: 20px;
+    font-weight: bold;
+}
+.ana-plants a{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+/* Email Subscription section style*/
+.email-subscription{
+    margin: 15vh 0 5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.13)), url("assets/news-letter-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    max-width: 100%;
+    height: 533px;
+}
+.email-subscription h2{
+    font-size: 3.3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+.subscription-form {
+  display: flex;
+}
+
+.form-input {
+  flex: 1;
+  padding: 10px;
+  border-right: none;
+  outline: none;
+  background-color: white;
+  width: 40vw;
+}
+
+.form-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 10vw;
+}
+
+.form-button:hover {
+  background-color: darkorange;
+}
 /* Responsive for mobile */
 @media screen and (max-width: 576px) {
     header{
@@ -223,5 +352,82 @@ header{
     white-space: normal;
     margin-bottom: 15px;
 }
+.latest-deal{
+    text-align: center;
+    margin: 15vh 10px 5px;
+}
+.latest-deal h3{
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.latest-deal p{
+    font-size: 1.2rem;
+    color: var(--dark-50);
+    white-space: pre-line;
+    margin-bottom: 7vh;
+}
+.pic-container{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 210px 210px 210px;
+    gap: 30px;
+    max-height: auto;
+    color: white;
+    margin-bottom: 10vh;
+}
+.bloom-plants{
+    grid-column: span 1;
+    background-size: cover;
+    width: 100%;
+}
+.zabo-plants{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.zabo-plants h6{
+    font-size: 20px;
+    font-weight: bold;
+}
+.zabo-plants a{
+    font-size: 16px;
+    font-weight: 600;
+}
+.ana-plants{
+    grid-column: span 1;
+    
+}
+
+.email-subscription {
+    height: 276px;
+    padding: 50px 20px 20px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: 40vh;
+  }
+
+  .email-subscription h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .subscription-form {
+    flex-direction: row;
+    width: 100%;
+    gap: 0;
+  }
+
+  .form-input {
+    width: 70%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .form-button {
+    width: 30%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
     
 }
