@@ -116,6 +116,16 @@ header{
 .store-image{
     width: 100%;
     flex: 1;
+    position: relative;
+    display: inline-block;
+}
+.badge{
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    top: -122px;
+    right: -73px;
+    z-index: 2;
 }
 .fp-content {
     flex: 1;
@@ -269,6 +279,41 @@ header{
 .form-button:hover {
   background-color: darkorange;
 }
+/* Footer section styles */
+footer{
+    margin: 10vh 10vw 3vh;
+}
+.footer{
+    grid-template-columns: 40% 15% 15% 20%;
+    gap: 20px;
+    
+}
+.logo-description p{
+    font-size: 1.2rem;
+    color: var(--dark-50);
+    white-space: pre-line;
+    margin-top: 15px;
+}
+.ancor-main{
+    flex-direction: column;
+    gap: 20px;
+}
+.ancor-sec{
+    flex-direction: column;
+    gap: 20px;
+}
+.social{
+    grid-template-columns: 36px 36px 36px 36px;
+    gap: 20px;
+    justify-content: right;
+}
+.twitter{
+    padding: 10px 0 0 5px;
+}
+footer a {
+    color: #6B7280;
+    font-weight: 600;
+}
 /* Responsive for mobile */
 @media screen and (max-width: 576px) {
     header{
@@ -340,6 +385,9 @@ header{
     gap: 30px;
     flex-direction: column;
 }
+.badge{
+    display: none;
+}
 .fp-content {
     margin: 10px 0 0;
 }
@@ -362,7 +410,7 @@ header{
     margin-bottom: 25px;
 }
 .latest-deal p{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     color: var(--dark-50);
     white-space: pre-line;
     margin-bottom: 7vh;
@@ -428,6 +476,23 @@ header{
     padding: 12px;
     font-size: 1rem;
   }
+
+
+
+  footer{
+    margin: 10vh 20px 3vh;
+}
+  .footer{
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.logo-description p{
+    font-size: 0.9rem;
+    white-space: normal;
+}
+.social{
+    justify-content: left;
+}
 
     
 }
