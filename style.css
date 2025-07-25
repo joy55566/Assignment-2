@@ -365,14 +365,17 @@ footer a {
 }
 .banner-content p{
     margin-top: 15px;
-    font-size: 0.8rem;
-    white-space: pre-line;
+    font-size: 1rem;
+    white-space: normal;
     color: var(--dark-50);
 }
 .banner-img {
     justify-content: none;
     width: 100%;
     padding-top: 90px;
+}
+.plants-section{
+    margin: 10vh 0 5vh;
 }
 .card-container{
     grid-template-columns: repeat(2,1fr);
@@ -412,7 +415,7 @@ footer a {
 }
 .latest-deal{
     text-align: center;
-    margin: 15vh 10px 5px;
+    margin: 10vh 10px 5px;
 }
 .latest-deal h3{
     font-size: 1.9rem;
